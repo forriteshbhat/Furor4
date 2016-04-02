@@ -1,0 +1,62 @@
+<ion-navbar *navbar danger>
+<button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <center><ion-title>
+    FUROR4.0
+  </ion-title>
+</center>
+</ion-navbar>
+
+
+<!--THIS IS MENU --> 
+<ion-content class="home">
+<ion-menu [content]="mycontent" >
+  <ion-content primary>
+    <ion-list>
+    <ion-item-divider><center> Menu </center></ion-item-divider>
+    <ion-item>
+      <button menuClose clear secodary block medium ><ion-icon name="home"></ion-icon> HOME</button>
+    </ion-item>
+    <ion-item>
+      <button clear secodary block medium (click)="gotoworkshop()"><ion-icon name="bulb"></ion-icon> Workshop</button>
+    </ion-item>
+    <ion-item>
+      <button menuClose clear secodary block medium (click)="gotoevents()"><ion-icon name="calendar"></ion-icon>Events</button>
+    </ion-item>
+    <ion-item>
+      <button clear secodary block medium (click)="gotoaboutus()"><ion-icon name="paper-plane"></ion-icon>About US</button>
+    </ion-item>
+    <ion-item>
+      <button menuClose clear secodary block medium (click)="gotocontactus()"><ion-icon name="chatbubbles"></ion-icon>Contact Us</button>
+    </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+
+
+
+
+<!-- this is the content for the main home page -->
+  <ion-card>
+    
+    <ion-card-content>
+    <img src='img/call.jpg' width='100%'/>
+      <center> <ion-card-title style="font-size: 20px;">
+        Reboot The Essence Of Fun.!!
+      </ion-card-title>
+       <button outline (click)="openInfo()">
+          <ion-icon name="home"></ion-icon>Read Full Story
+        </button></center> <center><button (click)="gotoevents()">
+          <ion-icon name="home"></ion-icon> GO TO EVENTS
+        </button></center>
+    </ion-card-content> 
+  </ion-card>
+
+</ion-content>
+  <ion-toolbar position="bottom">
+  <center><ion-title>5th to 7th APRIL</ion-title></center>
+  </ion-toolbar>
