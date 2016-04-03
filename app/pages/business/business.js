@@ -1,7 +1,7 @@
 import {Page} from 'ionic-angular';
 
 @Page({
-	templateUrl:'build/business/business.html'
+	templateUrl:'build/pages/business/business.html'
 })
 
 export class Business{}

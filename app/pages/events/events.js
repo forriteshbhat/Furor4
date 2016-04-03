@@ -8,6 +8,8 @@ import {Tracktrack} from '../tracktrack/tracktrack';
 import {Quizvista} from '../quizvista/quizvista';
 import {Litintosh} from '../litintosh/litintosh';
 import {Jellybeanbabble} from '../jellybeanbabble/jellyneanbabble';
+import {Capture} from '../capture/capture';
+import {Mini} from '../mini/mini';
 
 @Page({
 	templateUrl: 'build/pages/events/events.html'
@@ -69,4 +71,13 @@ export class Events{
 		this.nav.push(Jellybeanbabble,{});
 	}
 
+	gotomini()
+	{
+		this.nav.push(Mini,{});
+	}
+
+	gotocapture()
+	{
+		this.nav.push(Capture,{});
+	}
 }
